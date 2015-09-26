@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape"
+    android:layout_gravity="center"
+    android:layout_marginLeft="30dip"
+    android:layout_marginRight="30dip">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity= "center_horizontal|center"
+        android:layout_marginTop="5dip"
+        android:id="@+id/txtView"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true"
+        android:typeface="monospace" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity= "bottom|left"
+        android:id="@+id/txtReset"
+        android:paddingLeft="5dip"
+        android:paddingBottom="5dip"
+        android:layout_below="@+id/txtView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="@string/reset"
+        android:typeface="monospace"
+        android:background="@drawable/selector1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity= "bottom|right"
+        android:id="@+id/txtRefresh"
+        android:paddingRight="5dip"
+        android:paddingBottom="5dip"
+        android:layout_below="@+id/txtView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/refresh"
+        android:background="@drawable/selector1"
+        android:typeface="monospace" />
+
+
+
+</RelativeLayout>
+
+<!--
+
+
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/textView"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/imageRefresh"
+        android:layout_toStartOf="@+id/imageRefresh"
+        android:background="@drawable/selector"
+        android:textColor="#1e29ff"
+        android:layout_alignParentRight="true" />
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape"
+    android:layout_gravity="center"
+    android:layout_marginLeft="30dip"
+    android:layout_marginRight="30dip">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity= "center_horizontal|center"
+        android:layout_marginTop="5dip"
+        android:id="@+id/imageView"
+        android:src="@mipmap/ic_launcher"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity= "bottom|left"
+        android:id="@+id/imageReset"
+        android:paddingLeft="2dip"
+        android:paddingBottom="2dip"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+         />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity= "bottom|right"
+        android:id="@+id/imageRefresh"
+        android:paddingRight="2dip"
+        android:paddingBottom="2dip"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+         />
+
+</RelativeLayout>-->
+
+

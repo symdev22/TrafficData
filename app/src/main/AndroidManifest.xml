@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="es.symdev.trafficdata" >
+
+    <uses-sdk android:minSdkVersion="15"/>
+    
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:name="es.symdev.trafficdata.MyVariable">
+
+        <receiver android:name=".TdWidget" android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="android.appwidget.action.APPWIDGET_ENABLED" />
+                <action android:name="es.symdev.trafficdata.btnclickrefresh" />
+                <action android:name="es.symdev.trafficdata.btnclickreset" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/td_widget_provider">
+            </meta-data>
+        </receiver>
+    </application>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE">
+    </uses-permission>
+</manifest>
